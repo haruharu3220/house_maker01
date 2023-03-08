@@ -13,6 +13,11 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+// Route::middleware('auth')->group(function () {
+//   // 🔽 追加
+//   Route::get('/tweet/mypage', [TweetController::class, 'mydata'])->name('tweet.mypage');
+//   Route::resource('tweet', TweetController::class);
+// });
 
 Route::get('/', function () {
     return view('welcome');
